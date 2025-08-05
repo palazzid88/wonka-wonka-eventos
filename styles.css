@@ -184,7 +184,7 @@ nav.navbar {
   gap: 40px;
 }
 .servicio-contenido img {
-  max-width: 400px;
+  max-width: 280px;
   border-radius: 16px;
   flex: 1;
 }
