@@ -316,20 +316,66 @@ nav.navbar {
 
 
 /* ===== POR QUÉ ELEGIRNOS ===== */
+.servicio {
+  background-color: var(--color-rosa-claro); /* tono dulce pero llamativo */
+  border-radius: 16px;
+  padding: 60px 40px;
+  box-shadow: 0 4px 15px rgba(255, 105, 180, 0.1); /* sombra rosa */
+  max-width: 1000px;
+  margin: 0 auto 80px;
+}
+
 .servicio-contenido {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: space-between;
   gap: 40px;
 }
-.servicio-contenido img {
-  max-width: 280px;
-  border-radius: 16px;
-  flex: 1;
-}
-.servicio-contenido div {
+
+.servicio-texto {
   flex: 2;
 }
+
+.servicio-texto h2 {
+  color: var(--color-violeta);
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+.servicio-texto ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.servicio-texto li {
+  padding: 10px 0 10px 25px;
+  font-weight: 600;
+  position: relative;
+}
+
+.servicio-texto li::before {
+  content: "🍭";
+  position: absolute;
+  left: 0;
+  font-size: 1.2rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.servicio-imagen {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.servicio-imagen img {
+  max-width: 280px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
 /* ===== OPCIONALES ===== */
 .opcionales {
   background-color: var(--color-celeste-claro);
@@ -382,7 +428,9 @@ nav.navbar {
   padding: 10px;
 }
 .carousel img {
-  max-width: 300px;
+  width: 300px;
+  height: 250px;
+  object-fit: cover; /* Corta la imagen sin deformarla */
   border-radius: 12px;
   flex-shrink: 0;
 }
