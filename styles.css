@@ -1,7 +1,8 @@
 /* ===== VARIABLES GENERALES ===== */
 :root {
   --color-principal: #ff3c8d;     /* Rosa fuerte (ya estaba) */
-  --color-secundario: #ffa726;    /* Naranja brillante (ya estaba) */
+  --color-secundario: #ffa726; 
+  --color-footer: #111111;   /* Naranja brillante (ya estaba) */
   --color-fondo: #111111;         /* Fondo oscuro */
   --color-texto: #ffffff;         /* Blanco para contrastar */
   --color-verde: #3cffbd;         /* Verde menta brillante */
@@ -482,7 +483,7 @@ nav.navbar {
 
 /* ===== FOOTER ===== */
 footer {
-  background-color: var(--color-violeta);
+  background-color: var(--color-footer);
   color: white;
   text-align: center;
   padding: 40px 20px;
